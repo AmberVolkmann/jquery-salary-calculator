@@ -59,6 +59,16 @@ function calculateMonthly() {
        totalSalaries += Number(employeeArray[i].salary) 
     }
 
+    totalSalaries = (totalSalaries/12);
+
+    $('#totalMonthly').empty();
+    $('#totalMonthly').append('TOTAL MONTHLY COSTS: ', totalSalaries);
+
+    if(totalMonthly >= 20000){
+        
+    }
+    
+    
 
 
  }
