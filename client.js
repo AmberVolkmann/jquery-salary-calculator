@@ -6,6 +6,8 @@ $('#employeeTable').on('click', '.deleteBtn', deleteEmployee);
 
 }
 
+let employeeArray = [];
+
 function submitEmployee() {
 console.log('SUBMIT CLICKED');
 
@@ -36,7 +38,11 @@ console.log('SUBMIT CLICKED');
     $('#titleIn').val('');
     $('#salaryIn').val('');
 
+    (employeeArray).push(employeeAdded);
 
+    console.log(employeeArray);
+
+    calculateMonthly();
 
 }
 
@@ -48,5 +54,11 @@ console.log('DELETE IS CLICKED');
  }
  
 function calculateMonthly() {
+    let totalSalaries = 0;
+    for(let i = 0; i < employeeArray.length; i ++) {
+       totalSalaries += Number(employeeArray[i].salary) 
+    }
+
+
 
  }
