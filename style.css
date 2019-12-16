@@ -1,7 +1,18 @@
 header {
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: chartreuse;
 }
 
 .turnRed {
     background-color: red;
 }
+
+body {
+    background-color: chocolate;
+}
+
+thead {
+    background-color: salmon;
+}
+
