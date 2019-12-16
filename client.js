@@ -44,6 +44,8 @@ console.log('SUBMIT CLICKED');
 
     calculateMonthly();
 
+   
+
 }
 
 function deleteEmployee() {
@@ -61,14 +63,17 @@ function calculateMonthly() {
 
     totalSalaries = (totalSalaries/12);
 
+
     $('#totalMonthly').empty();
     $('#totalMonthly').append('TOTAL MONTHLY COSTS: ', totalSalaries);
+    turnRed();
 
-    if(totalMonthly >= 20000){
-        
-    }
-    
-    
-
+    function turnRed() {
+        if(totalSalaries >= 20000){
+            $('#totalMonthly').addClass(`turnRed`);
+        }
+     }
 
  }
+
+ 
